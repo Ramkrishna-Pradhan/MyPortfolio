@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="opcasity">
+    <!-- NAVBAR -->
+    <div id="navbar"></div>
+
+    <!-- ADMINER BUTTON -->
+    <header>
+         <button class="admin">Admin</button>
+    </header>
+    
+    <!-- MIDDLE PERT -->
+    <header class="header">
+        <div class="header-text">
+            <h2 class="hello">Hello, I'm</h2>
+            <h1 class="ram">RAMKRISHNA PRADHAN</h1>
+            <h3 class="iam">I'm a <span class="typed"></span></h3><br>
+            <a href="../html/contact.html" ><button class="hireme" id="disable">Hire me</button></a>
+        </div>
+        <img src="../img/image1.jpg" alt="Ramkrishna Pradhan's photo" class="profile-img">
+    </header>
+    </div>
+
+<!-- login form -->
+
+    <div class="login">
+        <form  action="../php/login.php" method="POST">
+            <span class="icon_close"><i class="fa-solid fa-xmark"></i></span>
+            <h2 class="head">Login</h2>
+            Email:<br>
+            <input class="log_int"  type="email" placeholder="Enter your email" name="email"><br><br>
+            Password:<br>
+            <input class="log_int" type="password" placeholder="Enter your password" name="password"><br><br>
+            <button class="button" type="submit" >submit</button>
+            <p class="condition">Only for Adminer</p>
+        </form>
+    </div>
+
+
+<script src="../js/home.js"></script>
+
+</body>
+</html>

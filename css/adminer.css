@@ -1,0 +1,53 @@
+body{
+   
+    background-image: url("../img/image4.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-right: 15%;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.table{
+    font-size: xx-large;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+
+.candidate{
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 20%;
+    font-size: 5rem;
+    color: aliceblue;
+}
+.head{
+    background-color: chartreuse;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#student-list{
+    background-color: rgb(255, 238, 0);
+}
+
+.update,.delete{
+    background: linear-gradient(180deg, rgb(7, 77, 88) 1%, rgb(12, 109, 120) 20%, rgb(9, 155, 217) 83%);
+    font-size: large;
+    margin-left: 15px;
+    padding: 7px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.delete{
+    background: linear-gradient(180deg, rgb(88, 7, 7) 1%, rgb(120, 12, 12) 20%, rgb(217, 9, 9) 83%);
+}

@@ -1,0 +1,81 @@
+body{
+    background-image: url("../img/image4.avif");
+    background-size:cover;
+    padding-bottom: 3rem;
+    position:relative;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    animation: slide 3s normal 0.01s 1;
+}
+
+@keyframes slide{
+    0%{
+    transform: translatey(50%);
+    opacity: 0;
+    }
+
+    100%{
+    transform: translatey(0);
+    opacity: 1;
+    }
+}
+
+.head{
+    margin-left: 280px;
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    padding-top: 20px;
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 10px;
+    text-decoration-style: double;
+    color: rgb(255, 255, 255);
+
+}
+.add{
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+}
+.h1{
+    margin-bottom: 0;
+}
+.sp{
+   font-size:large;
+    margin-left: 40px;
+}
+form{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    margin-right: 20rem;
+    margin-left: 10rem;
+    padding: 50px 50px 100px 50px;
+    font-size:large;
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px rgb(253, 253, 253);
+}
+.input{
+    width:35rem ;
+    height:30px;
+}.spa{
+    margin-left: 10rem;
+}
+.button{
+    margin: 40px 0px 0px 200px;
+    font-size: 20px;
+    border-radius: 7px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(180deg, rgb(6, 79, 55) 10%, rgb(16, 157, 124) 50%, rgb(15, 208, 169) 100%);
+}
+.button:hover{
+    background: linear-gradient(0deg, rgb(6, 79, 55) 10%, rgb(16, 157, 124) 50%, rgb(15, 208, 169) 100%);
+    font-size: 20.4px;
+}
+.sec{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-left: 280px;
+    margin-top: 70px;
+}

@@ -1,0 +1,135 @@
+
+body{
+
+    display: flex;
+    background-image:url("../img/image4.avif") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+    position:relative;
+    animation: slide 3s normal 0.01s 1;
+    
+}
+
+
+
+@keyframes slide{
+    0%{
+    transform: translatey(50%);
+    opacity: 0;
+    }
+
+    100%{
+    transform: translatey(0);
+    opacity: 1;
+    }
+}
+
+.top{
+    color: rgb(255, 255, 255);
+    font-size: 3vw;
+    font-weight: bolder;
+    text-decoration:underline;
+    text-decoration-style: double;
+    text-underline-offset: 20%;
+    text-decoration-thickness:4% ;
+    margin-left:280px;
+    z-index: -1;
+}
+
+.main-container{
+    margin-left:260px;
+    margin-top: 8vw;
+    height:60rem;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    gap:2vw;
+}
+
+.container{
+    height: 60vmin;
+    width: 25vw;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px 1px rgb(0, 128, 255);
+}
+
+.container::before{
+    content: ' ';
+    position: absolute;
+    width: 25vw;
+    background:linear-gradient(180deg, rgb(6, 106, 99) 10%, rgb(7, 151, 151) 50%, rgb(5, 230, 208) 100%);
+    border-radius: 8px;
+    z-index: -1;
+    height: 0;
+    transition:height 1s ease;
+}
+
+.container:hover::before{
+    height: 60vmin;
+    
+}
+
+
+
+.head-line{
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+   font-size: 2vw;
+}
+
+.icon{
+    height: 15%;
+    width: 15%;
+    object-fit: contain;
+    margin-left:10vw;
+    margin-top: 10px;
+    
+}
+
+.text{
+    margin: 20px 20px 10px 20px;
+    font-size: 1.5vw;
+    text-align: justify;
+    word-spacing: -0.1vw;
+}
+
+@media (max-width:600px) {
+    .main-container{
+        height: 100%;
+        flex-direction: column;
+    }
+    .container{
+        width: 200vw;
+        height: 120vh;
+        margin-bottom: 20%;
+    }
+    .text{
+        word-spacing: -0.1vw;
+        font-size: 10vw;
+        margin-top: 20vw;
+    }
+    .icon{
+        margin-left: 82vw;
+    }
+    .head-line{
+        font-size: 15vw;
+    }
+
+    .top{
+        font-size: 15vw;
+        margin-bottom: 5%;
+    }
+    .container::before{
+        width: 200vw;
+    }
+
+    .container:hover::before{
+        height: 120vh;
+        
+    }
+    
+}
