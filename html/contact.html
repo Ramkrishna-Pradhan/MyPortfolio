@@ -1,62 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
-    
+
 </head>
+
 <body>
-    <!-- navbar part of contact page -->
-    <div id="navbar"></div>
+    <!-- top part of contact page -->
+    <header class="head" id="contact-header">Contact</header>
 
-    
+    <!-- middle part of contact page -->
+    <section class="sec">
+        <div>
+            <div class="add">
+                <h2 class="h1"><i class="fa-solid fa-house"></i>Address</h2>
+                <span class="sp"> Gourda,Bangjhatia,Dantan,Paschim medinipur</span>
 
-<!-- top part of contact page -->
- <header class="head">Contact</header>
+                <h2 class="h1"><i class="fa-solid fa-phone"></i>Call us</h2>
+                <span class="sp"> 9641156489</span>
 
- <!-- middle part of contact page -->
-  <section class="sec">
-    <div>
-        <div class="add">
-            <h2 class="h1"><i class="fa-solid fa-house"></i>Address</h2>
-            <span class="sp"> Gourda,Bangjhatia,Dantan,Paschim medinipur</span>
+                <h2 class="h1"><i class="fa-solid fa-envelope"></i>Email</h2>
+                <span class="sp"> ramkrishnapradhan918@gmail.com</span>
+            </div>
 
-             <h2 class="h1"><i class="fa-solid fa-phone"></i>Call us</h2>
-             <span class="sp"> 9641156489</span>
 
-            <h2 class="h1"><i class="fa-solid fa-envelope"></i>Email</h2>
-             <span class="sp"> ramkrishnapradhan918@gmail.com</span>
+            <!-- add google map -->
+            <map class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d972.9527265274696!2d87.37815202624422!3d21.876433870168174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDUyJzM0LjMiTiA4N8KwMjInNDMuMCJF!5e0!3m2!1sen!2sin!4v1738137602473!5m2!1sen!2sin"
+                    width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </map>
         </div>
-    
+        <div>
 
- <!-- add google map -->
-<map class="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d972.9527265274696!2d87.37815202624422!3d21.876433870168174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjHCsDUyJzM0LjMiTiA4N8KwMjInNDMuMCJF!5e0!3m2!1sen!2sin!4v1738137602473!5m2!1sen!2sin" 
-     width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</map>
-    </div>
-<div>
-    
-<!-- add  contact form -->
-<form action="../php/contact.php" method="POST">
-YOUR NAME:
-<span class="spa"> Email:</span><br>
-<input  type="text" name="name" placeholder="Enter your Name" size="30px" style="height:30px;">
-<input   type="text" name="email" placeholder="Enter your Email" size="30px" style="height:30px; margin-left:30px" ><br><br>
+            <!-- add  contact form -->
+            <form action="../php/contact.php" method="POST" class="contact-form">
+                YOUR NAME:
+                <span class="spa"> Email:</span><br>
+                <input type="text" name="name" placeholder="Enter your Name" size="30px" style="height:30px;">
+                <input type="text" name="email" placeholder="Enter your Email" size="30px"
+                    style="height:30px; margin-left:30px"><br><br>
 
-Subject:<br>
-<input class="input" name="subject" type="text" placeholder="Subject" ><br><br>
-Massage:<br>
-<input class="input" name="massage" type="text" placeholder="Massage" style="height: 100px;"> 
- <button class="button" type="submit"><i class="fa-solid fa-paper-plane"></i>Send me</button>
- </form>
-</div>
-</section>
-
-
-<script src="../js/contact.js"></script>
+                Subject:<br>
+                <input class="input" name="subject" type="text" placeholder="Subject"><br><br>
+                Massage:<br>
+                <input class="input" name="massage" type="text" placeholder="Massage" style="height: 100px;">
+                <button class="button" type="submit"><i class="fa-solid fa-paper-plane"></i>Send me</button>
+            </form>
+        </div>
+    </section>
 </body>
+<script src="../js/navbar.js"></script>
 </html>

@@ -4,7 +4,6 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position:relative;
     animation: slide 3s normal 0.01s 1;
   }
   
@@ -129,7 +128,7 @@ body{
     color: black;
   }
 
-  .login{
+  .admin-login{
     position: absolute;
     color: aliceblue;
     margin-left:280px;
@@ -146,14 +145,14 @@ body{
     transition-timing-function: ease-in-out;
     
   }
-  .head{
+  .login-head{
     color: rgb(255, 255, 255);
     margin-left: 6rem;
     padding-top: 20px;
 
   }
   
-  .button{
+  .login-button{
     padding: 10px 100px;
     margin-top: 40px;
     margin-left: 8px;
@@ -176,4 +175,10 @@ body{
  .fa-xmark{
     margin-left: 18rem;
     margin-top: 10px;
+}
+
+
+.about-page,.service-page,.resume-page,.contact-page{
+  padding-bottom: 5rem;
+  padding-top: 5rem;
 }
